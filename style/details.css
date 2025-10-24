@@ -1,0 +1,246 @@
+Base Styles
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Main Container */
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.product-image-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section */
+.product-info-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.product-price {
+  font-size: 1.6em;
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color:white;
+}
+
+/* Button Styles */
+.book-now-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-title {
+    font-size: 1.8em;
+  }
+
+  .product-price {
+    font-size: 1.3em;
+  }
+}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-item {
+      width: 200px;
+      height: 300px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-item:hover {
+      transform: scale(1.03);
+    }
+
+    .product-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Ensures all images look clean */
+      border-bottom: 1px solid #ccc;
+    }
+
+    .product-item p {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .site-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo .logo-box {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-paragraph {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-right h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-right p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #666;
+    color: #999;
+    font-size: 0.9rem;
+}
